@@ -11,8 +11,7 @@ public class FileReadService {
 	
 	//Add elements from csv file to a list of ModelSales objects
 	public List<ModelSales> ReadFile(List<ModelSales> modelSales, String modelFileName) throws FileNotFoundException, IOException {
-		// Read in the text file
-	
+			// Read in the text file
 			BufferedReader reader = new BufferedReader(new FileReader(modelFileName+".csv"));
 			String line;
 			//Skip file header
